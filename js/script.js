@@ -53,7 +53,7 @@ function printCards() {
 }
 
 function creareSingolaCard(membro) {
-  const { naame, role, email, img } = membro;
+  const { name, role, email, img } = membro;
   return `
   <div class="card">
       <div class="card-image">

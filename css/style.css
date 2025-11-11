@@ -20,18 +20,31 @@ img {
     padding: 20px;
 }
 
+.bg-blue {
+    background-color: rgb(170, 214, 216);
+}
+
+h1 {
+    color: rgb(91, 77, 77);   
+}
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+
 .container {
   width: 70%;
   max-width: 600px;
   margin: 0 auto;
+  align-items: center;
 }
 
 .card {
   display: flex;
   flex-direction: row;
   align-items: stretch;
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: rgb(129, 114, 114);   
 
   /* debug */
   /* min-height: 150px; */
@@ -54,6 +67,13 @@ img {
   flex-direction: column;
   justify-content: center;
   gap: 10px;
+}
+
+.team-container {
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+
 }
 
 
