@@ -37,3 +37,25 @@ const teamMembers = [
   }
 ];
 
+const teamContainer = document.querySelector(".team-container");
+let cardsNew = "";
+for (let i = 0; i < teamMembers.length; i++) {
+  const curMembers = teamMembers[i];
+  const { name, role, email, img } = curMembers;
+  const card = `
+    <div class="card">
+      <div class="card-image">
+        <img 
+        src="${img}" 
+        alt="${name}" />
+      </div>
+      <div class="card-content">
+        <h3>${name}</h3>
+        <p>${role}</p>
+        <a>${email}</a>
+      </div>
+    </div>
+  `;
+  cardsNew += card;
+}
+teamContainer.innerHTML = cardsNew;
