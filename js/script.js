@@ -37,13 +37,25 @@ const teamMembers = [
   }
 ];
 
-const teamContainer = document.querySelector(".team-container");
-let cardsNew = "";
-for (let i = 0; i < teamMembers.length; i++) {
-  const curMembers = teamMembers[i];
-  const { name, role, email, img } = curMembers;
-  const card = `
-    <div class="card">
+// Creo una funzione
+printCards();
+
+function printCards() {
+
+  const teamContainer = document.querySelector(".team-container");
+  let cardsNew = "";
+  for (let i = 0; i < teamMembers.length; i++) {
+    const curMembers = teamMembers[i];
+    const card = creareSingolaCard(curMembers);
+    cardsNew += card;
+  }
+  teamContainer.innerHTML = cardsNew;
+}
+
+function creareSingolaCard(membro) {
+  const { naame, role, email, img } = membro;
+  return `
+  <div class="card">
       <div class="card-image">
         <img 
         src="${img}" 
@@ -56,6 +68,4 @@ for (let i = 0; i < teamMembers.length; i++) {
       </div>
     </div>
   `;
-  cardsNew += card;
 }
-teamContainer.innerHTML = cardsNew;
