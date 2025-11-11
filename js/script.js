@@ -38,7 +38,7 @@ const teamMembers = [
 ];
 
 // Creo una funzione
-printCards();
+
 
 function printCards() {
 
@@ -69,3 +69,27 @@ function creareSingolaCard(membro) {
     </div>
   `;
 }
+
+printCards();
+//Prelevo tutti gli elementi del form
+const nameImput = document.querySelector("#name");
+const roleImpput = document.querySelector("#role");
+const imageImput = document.querySelector("#image");
+const emailImput = document.querySelector("#email");
+const form = document.querySelector("form");
+
+//console.log(nameImput, roleImpput, imageImput, form, email);
+
+form.addEventListener("submit", function (event){
+  event.preventDefault();
+  const nuovoMembro = {
+    name: nameImput.value,
+    role: roleImpput.value,
+    email: emailImput.value,
+    image: imageImput.value,
+  };
+  teamMembers.push(nuovoMembro);
+  console.log(teamMembers);
+});
+
+

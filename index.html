@@ -12,17 +12,19 @@
         rel="stylesheet" />
     <!--CSS-->
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" . href="./css/responsive.css">
 </head>
 
 <body class="bg-blue">
     <div class="container flex">
-        <h1 class="py-20">Meet our Team</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ut hic,
-            facere iste officiis, expedita voluptatem beatae cum cupiditate ratione
-            eius minus ex esse voluptatibus debitis, a totam aliquid fugiat.</p>
-        <div class="team-container py-20">
-            <!--Tutte la card-->
-            <!--
+        <section class="">
+            <h1 class="py-20">Meet our Team</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ut hic,
+                facere iste officiis, expedita voluptatem beatae cum cupiditate ratione
+                eius minus ex esse voluptatibus debitis, a totam aliquid fugiat.</p>
+            <div class="team-container py-20">
+                <!--Tutte la card-->
+                <!--
             <div class="card">
                 <div class="card-image">
                     <img src="./img/male1.png" alt="" />
@@ -34,8 +36,34 @@
                 </div>
             </div>
             -->
-        </div>
+            </div>
+        </section>
+
+        <section class="form-section">
+            <form action="">
+                <div>
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" required />
+                </div>
+
+                <div>
+                    <label for="role">Ruolo</label>
+                    <input type="text" id="role" required />
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="text" id="email" required />
+                </div>
+
+                <div>
+                    <label for="image">Immagine</label>
+                    <input type="text" id="image" required />
+                </div>
+                <button type="submit">Invia</button>
+            </form>
+        </section>
     </div>
+
     <!--SScript JS-->
     <script src="./js/script.js"></script>
 </body>
