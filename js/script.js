@@ -89,7 +89,11 @@ form.addEventListener("submit", function (event){
     image: imageImput.value,
   };
   teamMembers.push(nuovoMembro);
+  
+  printCards();
   console.log(teamMembers);
 });
+
+
 
 
